@@ -1,2 +1,2 @@
-# buddy-finder
-Site destinado a ong´s de animais para adoção.
+# Vann Bora
+Site destinado a gestão de processos para profissionais autonomos de van escolar
