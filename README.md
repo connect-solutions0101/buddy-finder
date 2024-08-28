@@ -1,2 +1,2 @@
 # Vann Bora
-Site destinado a gestão de processos para profissionais autonomos de van escolar
+Front-end do projeto de Faculdade da SPTECH para o terceiro e quarto semestre
