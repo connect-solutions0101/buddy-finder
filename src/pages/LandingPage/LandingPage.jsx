@@ -1,8 +1,14 @@
 import styles from "./LandingPage.module.css";
 import imgLogo from "../../utils/assets/logo-connect-solutions.png";
 import imgConnect from "../../utils/assets/imagem-por-que-connect.jpg";
+import Accordion from "../../components/accordion/accordion";
 
 function LandingPage() {
+    const items = [
+        { header: 'Seção 1', content: 'Conteúdo da seção 1' },
+        { header: 'Seção 2', content: 'Conteúdo da seção 2' },
+        { header: 'Seção 3', content: 'Conteúdo da seção 3' },
+    ];
     return (
         <>
             <div className={styles["header"]}>
@@ -79,6 +85,30 @@ function LandingPage() {
                 </div>
             </div>
 
+            {/* ------------------------------------------------------ */}
+
+            <div className={styles["section-faq"]}>
+                <div className={styles["container"]}>
+                    <div className={styles["faq-content"]}>
+                        <div className={styles["title"]}>
+                            <h1>Perguntas Frequentes</h1>
+                        </div>
+                        <div className={styles["item-accordion"]}>
+                            <Accordion items={items} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* -------------------------------------------- */}
+            <div className={styles["footer-section"]}>
+                <div className={styles["container"]}>
+                    <div className={styles["footer-content"]}>
+                        <span>socorro deus</span>
+                    </div>
+                </div>
+
+            </div>
 
         </>
     );

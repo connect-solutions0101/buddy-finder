@@ -1,0 +1,72 @@
+.section-accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Bordas arredondadas mais sutis */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra mais leve */
+    padding: 20px; /* Espaço interno ao redor do accordion */
+}
+
+.accordion-header {
+    cursor: pointer;
+    background-color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 8px; /* Bordas arredondadas do cabeçalho */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil ao redor dos quadrados */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Espaçamento entre os itens do accordion */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    border: none; /* Removendo bordas e usando sombras para um visual mais limpo */
+}
+
+.accordion-header:hover {
+    background-color: #f0f0f0; /* Efeito de hover leve */
+}
+
+.accordion-header.active {
+    background-color: #9379f9;
+    color: #fff;
+}
+
+.accordion-content {
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra leve para o conteúdo */
+    display: none;
+    animation: fade-in-up 0.3s ease-in-out;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+.accordion-header i {
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active i {
+    transform: rotate(180deg);
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
