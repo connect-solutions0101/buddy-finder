@@ -5,9 +5,10 @@ import Accordion from "../../components/accordion/accordion";
 
 function LandingPage() {
     const items = [
-        { header: 'Seção 1', content: 'Conteúdo da seção 1' },
-        { header: 'Seção 2', content: 'Conteúdo da seção 2' },
-        { header: 'Seção 3', content: 'Conteúdo da seção 3' },
+        { header: 'Quais serviços vocês oferecem?', 
+            content: 'O carro-chefe da Connect Solutions é o Vann Bora, um sistema de gerenciamento financeiro para motoristas de vans escolares. Com ele, é possível acompanhar facilmente quem está com pagamentos em dia ou em atraso, além de outros indicadores essenciais para otimizar o dia a dia do motorista. Conheça mais na seção "Produtos" do nosso site!' },
+        { header: 'Como posso solicitar uma cotação ou orçamento?', content: 'Para solicitar nossos serviços, entre em contato pelo e-mail connect.solutions.sptech@gmail.com. Estamos empolgados para conhecer você, e nos mantemos à sua disposição para esclarecer todas as dúvidas!' },
+        { header: 'Vocês oferecem treinamento para o uso das soluções?', content: 'Sim! Nosso time preparou um material completo em forma de um “manual de uso”, construido de forma intuitiva para ajudá-lo a usar nossa solução com facilidade. Se surgir qualquer dúvida enquanto você usa o Vann Bora, não hesite em nos contatar! Você pode falar com nossa equipe de especialistas pelo e-mail: connect.solutions.sptech@gmail.com' },
     ];
     return (
         <>

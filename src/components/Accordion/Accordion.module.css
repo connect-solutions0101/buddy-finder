@@ -1,50 +1,59 @@
-.section-accordion {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: #f9f9f9;
-    border-radius: 10px; /* Bordas arredondadas mais sutis */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra mais leve */
-    padding: 20px; /* Espaço interno ao redor do accordion */
+.accordion-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px; /* Bordas arredondadas do cabeçalho */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil ao redor dos quadrados */
 }
 
 .accordion-header {
     cursor: pointer;
-    background-color: #fff;
+    background-color: #F0F0F0;
     padding: 15px 20px;
     font-size: 16px;
     font-weight: bold;
-    color: #333;
-    border-radius: 8px; /* Bordas arredondadas do cabeçalho */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil ao redor dos quadrados */
+    color: #0B0416;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px; /* Espaçamento entre os itens do accordion */
     transition: background-color 0.3s ease, color 0.3s ease;
     position: relative;
-    border: none; /* Removendo bordas e usando sombras para um visual mais limpo */
+    width: 750px;
 }
 
-.accordion-header:hover {
-    background-color: #f0f0f0; /* Efeito de hover leve */
+.accordion-header:hover,
+.accordion-header-arrow:hover {
+    background-color: #dbdbdb; /* Efeito de hover leve */
 }
 
 .accordion-header.active {
-    background-color: #9379f9;
-    color: #fff;
+    background-color: #dbdbdb;
+    color: #0B0416;
 }
+
+.accordion-header-arrow {
+    cursor: pointer; /* Para que o cursor indique que é clicável */
+    transition: color 0.3s ease; /* Transição suave ao mudar a cor */
+}
+
+.accordion-header-arrow:hover {
+    color: #0B0416; /* Muda a cor no hover, se desejar */
+}
+
 
 .accordion-content {
     padding: 15px 20px;
-    background-color: #fff;
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra leve para o conteúdo */
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    /* Sombra leve para o conteúdo */
     display: none;
     animation: fade-in-up 0.3s ease-in-out;
     font-size: 14px;
     line-height: 1.6;
     color: #555;
+    max-width: 750px;
+    ;
 }
 
 .accordion-content.active {

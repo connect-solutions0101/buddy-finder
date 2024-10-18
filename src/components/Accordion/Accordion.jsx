@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from "./Accordion.module.css";
 
 const Accordion = ({ items }) => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -11,17 +12,23 @@ const Accordion = ({ items }) => {
         <div>
             {items.map((item, index) => (
                 <div key={index}>
-                    <div
-                        className={`accordion-header ${activeIndex === index ? 'active' : ''}`}
-                        onClick={() => toggleAccordion(index)}
-                    >
-                        {item.header}
+                    <div className={styles["accordion-header-content"]}>
+                        <div
+                            className={`${styles['accordion-header']} ${activeIndex === index ? styles['active'] : ''}`}
+                            onClick={() => toggleAccordion(index)}
+                        >
+                            {item.header}
+                        </div>
+                        <div className={styles["accordion-header-arrow"]}>
+                            v
+                        </div>
                     </div>
+
                     <div
-                        className="accordion-content"
+                        className={styles['accordion-content']}
                         style={{
                             display: activeIndex === index ? 'block' : 'none',
-                            transition: 'max-height 0.2s ease-out',
+                            transition: 'max-height 1s ease-out',
                         }}
                     >
                         {item.content}
