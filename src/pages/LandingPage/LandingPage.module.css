@@ -257,6 +257,12 @@
 
 /* -------------------------------- */
 
+p {
+    margin: 5px;
+    padding: 0;
+    border: 0;
+}
+
 .section-products {
     display: flex;
     background-color: #0B0416;
@@ -264,28 +270,116 @@
     justify-content: space-around;
 }
 
-.section-products .products-content {
+.section-products .section-products-content {
     display: flex;
     height: 550px;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
 }
+
+.section-products .section-products-content .cabecalho {
+    display: flex;
+    border-bottom: 1.5px solid #F0F0F0;
+    color: #F0F0F0;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.section-products .section-products-content .products-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.section-products .section-products-content .products-content .img {
+    width: 65%;
+
+}
+
+.section-products .section-products-content .products-content .img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section-products .section-products-content .text-vann-bora {
+    display: flex;
+    color: #F0F0F0;
+    flex-direction: column;
+    width: 350px;
+}
+
+.section-products .section-products-content .text-vann-bora .title-vann-bora {
+    font-style: italic;
+}
+
+.section-products .section-products-content .text-vann-bora .about-vann-bora {
+    font-family: "Inter", serif;
+    display: flex;
+    color: #F0F0F0;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.section-products .section-products-content .text-vann-bora .button-saiba-mais-vann-bora {
+    display: flex;
+    margin-top: 30px;
+    margin: 30px auto;
+
+    
+}
+
+.section-products .section-products-content .text-vann-bora .button-saiba-mais-vann-bora button {
+    font-weight: bold;
+    cursor: pointer;
+    height: 33px;
+    width: 125px;
+    font-size: 17px;
+    border-radius: 25px;
+    border: none;
+    color: #381358;
+}
+
+.section-products .section-products-content .text-vann-bora .button-saiba-mais-vann-bora button:hover {
+    font-weight: bold;
+    background-color: #a71aca;
+    color: #0b0411;
+}
+
+/* .section-products .section-products-content .products-cicles {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-products .section-products-content .products-cicles button{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    border-radius: 50px;
+    background-color: #F0F0F0;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 18px;
+} */
+
 
 /* ---------------------------------- */
 
 .section-faq {
     display: flex;
     background-color: #F0F0F0;
-    justify-content: center; /* Centraliza horizontalmente */
-    padding: 20px; /* Adiciona um espaço ao redor da seção */
+    justify-content: center;
+    padding: 20px;
 }
 
 .section-faq .faq-content {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    height: 550px;
+    height: 500px;
     flex-direction: column;
     align-items: center;
 }
@@ -293,8 +387,8 @@
 .section-faq .faq-content .item-accordion {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 375px;
 }
@@ -310,4 +404,88 @@
 .footer-section .footer-content {
     display: flex;
     height: 300px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-section .footer-content .logo {
+    display: flex;
+    cursor: pointer;
+}
+
+.footer-section .footer-content .footer-block {
+    display: flex;
+    height: 250px;
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section .footer-content .footer-block h1 {
+    display: flex;
+    color: #F0F0F0;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.footer-section .footer-content .footer-block button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #F0F0F0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section .footer-content .footer-block button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1.2px;
+    width: 100%;
+    background-color: #F0F0F0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.footer-section .footer-content .footer-block button:hover::after {
+    transform: scaleX(0.9);
+}
+
+
+.footer-section .footer-content .footer-block h1 {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.footer-section .footer-content .footer-block .footer-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F0F0F0;
+}
+
+.footer-section .footer-content .footer-block .footer-faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F0F0F0;
+}
+
+.footer-section .footer-content .footer-block .footer-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F0F0F0;
+}
+
+.footer-section .footer-content .footer-block .footer-contato span {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 16px;
 }

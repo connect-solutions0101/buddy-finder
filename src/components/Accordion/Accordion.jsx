@@ -19,9 +19,9 @@ const Accordion = ({ items }) => {
                         >
                             {item.header}
                         </div>
-                        <div className={styles["accordion-header-arrow"]}>
+                        {/* <div className={styles["accordion-header-arrow"]}>
                             v
-                        </div>
+                        </div> */}
                     </div>
 
                     <div
