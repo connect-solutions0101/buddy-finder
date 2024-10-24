@@ -177,7 +177,7 @@ function LandingPage() {
                                 <h1>Contato</h1>
                             </div>
                             <div className={styles["footer-contato"]}>
-                                <span>connect.solution@gmail.com</span>
+                                <span>connect.solutions@gmail.com</span>
                                 {/* <span>(11) 90000-0000</span> */}
                                 <span>(11) 0000-0000</span>
                             </div>
