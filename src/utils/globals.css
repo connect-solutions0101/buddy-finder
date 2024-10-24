@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+.button-header {
+    outline: none;
+    display: flex;
+    margin: 0 11rem;
+    max-height: 80%;
+    align-items: center;
+    cursor: pointer;
+}
